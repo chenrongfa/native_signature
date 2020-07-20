@@ -28,6 +28,7 @@ const char hexcode[] = {'0','1','2','3','4','5','6','7','8','9','A','B','C','D',
 
 
 static jobject getApplication(JNIEnv *env) {
+
     jobject application = NULL;
     jclass activity_thread_clz = env->FindClass("android/app/ActivityThread");
     if (activity_thread_clz != NULL) {
